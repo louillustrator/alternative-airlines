@@ -1,5 +1,5 @@
 import './App.css';
-import alternativeAirlinesLogo from "./images/logos/alternative-airlines.jpg"
+import HeroBanner from './components/HeroBanner';
 import Nav from './components/Nav.js'
 
 function App() {
@@ -9,10 +9,7 @@ function App() {
 
         <Nav />
       </header>
-      <div className="hero-banner">
-        <h1>Search and book flights to Australia</h1>
-        <h2>Buy your flights now and pay later</h2>
-      </div>
+      <HeroBanner />
     </div>
   );
 }

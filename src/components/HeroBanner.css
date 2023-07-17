@@ -1,0 +1,7 @@
+.hero-banner {
+  background-color: #519dbf;
+  padding: 40px 0;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../images/background-image.jpg);
+}

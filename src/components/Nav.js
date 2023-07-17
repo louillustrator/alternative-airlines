@@ -1,6 +1,6 @@
 import './Nav.css';
 import React from "react";
-import burgerMenu from '../icons/menu.svg';
+import burgerMenuIcon from '../icons/menu.svg';
 import alternativeAirlinesLogo from "../images/logos/alternative-airlines.jpg"
 
 import { useState } from "react";
@@ -17,13 +17,12 @@ export default function Nav() {
         </a>
 
         <button className='hamburger' onClick={() => {
-          console.log('clicked')
           setIsNavExpanded(!isNavExpanded);
         }}>
-          <img src={burgerMenu} />
+          <img src={burgerMenuIcon} alt="Icon to expand mobile navigation" />
         </button>
       </div>
-      <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+      <nav role="navigation" className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <ul>
           <li>
             <a href="/">Book With Us</a>
@@ -35,8 +34,32 @@ export default function Nav() {
             <a href="/">Manage my booking</a>
           </li>
         </ul>
-      </div>
-
+      </nav>
+      <nav role="navigation" className="desktop-navigation">
+        <div className="desktop-navigation-left-section">
+          <ul>
+            <li>
+              <a href="/">Book flights</a>
+            </li>
+            <li>
+              <a href="/">Information</a>
+            </li>
+            <li>
+              <a href="/">Help</a>
+            </li>
+            <li>
+              <a href="/">Travel Agents</a>
+            </li>
+          </ul>
+        </div>
+        <div className="desktop-navigation-right-section">
+          <ul>
+            <li>
+              <a href="/">Manage booking</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </>
   )
 }
