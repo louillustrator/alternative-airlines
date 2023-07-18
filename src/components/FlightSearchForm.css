@@ -31,14 +31,9 @@
   width: 0;
 }
 
-/* .radio-button-label[checked] {
-
-} */
-
 label:focus-within {
   background-color: #005aa9;
   color: #ffffff;
-  /* border-color: #4c4; */
 }
 
 .input-column {
