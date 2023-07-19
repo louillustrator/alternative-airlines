@@ -14,10 +14,7 @@
 
 .radio-button-label {
   display: inline-block;
-  /* background-color: #ddd; */
   padding: 10px 16px;
-  /* font-family: sans-serif, Arial;
-  font-size: 16px; */
   border: 1px solid #e6e9f0;
   border-radius: 12px;
   margin: 5px;
@@ -46,4 +43,55 @@ label:focus-within {
   border-radius: 12px;
   border: 1px solid #e6e9f0;
   margin-bottom: 8px;
+}
+
+.submit-button {
+  width: 100%;
+  height: 60px;
+  background-color: #005aa9;
+  color: #ffffff;
+  border-radius: 12px;
+  border: none;
+}
+
+.toggle {
+  display: none;
+}
+
+@media screen and (min-width: 636px) {
+  .toggle {
+    display: inline;
+    margin-left: auto;
+  }
+
+  .radio-toggle-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .input-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .submit-button {
+    width: auto;
+  }
+
+  .input-column {
+    display: flex;
+    align-content: center;
+  }
+
+  .input-wrapper {
+    min-width: 35vw;
+    margin: 6px;
+  }
+
+  .input-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

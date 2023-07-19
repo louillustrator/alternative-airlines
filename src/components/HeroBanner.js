@@ -10,7 +10,7 @@ export default function HeroBanner() {
       <h2>Buy your flights now and pay later</h2>
 
       <div className="trustpilot-banner">
-        <img src={TrustPilotLogo}></img>
+        <img src={TrustPilotLogo} alt="trust pilot 4.5 stars"></img>
         <h5>TrustScore 4.5 | 6,5000 reviews</h5>
       </div>
       <FlightSearchForm />
